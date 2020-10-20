@@ -1,0 +1,7 @@
+# C files
+*.out
+*.exe
+*.o
+
+# Build folder
+build/
