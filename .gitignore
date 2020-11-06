@@ -5,3 +5,8 @@
 
 # Build folder
 build/
+
+# Data files
+trash/
+report/
+*.csv
