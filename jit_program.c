@@ -35,62 +35,98 @@ char *get_file_content(char* file) {
 	return code;
 }
 
-int main(int argc, char **argv) {
-	if (argc != 2) {
-		fprintf(stderr, "Require file to be compiled as argument to the program\n");
-		exit(1);
-	}
+int getTime(struct timeval *startTime, struct timeval *endTime) {
+	int elapsed = ((endTime->tv_sec - startTime->tv_sec) * 1000000) + (endTime->tv_usec - startTime->tv_usec);
+	return elapsed;
+}
 
-	char *code = get_file_content(argv[1]);
-
+TCCState *init() {
 	TCCState *s;
-	int i;
-	int (*func)(int);
-
 	s = tcc_new();
 	if (!s) {
 		fprintf(stderr, "Could not create tcc state\n");
 		exit(1);
 	}
 
-	/* if tcclib.h and libtcc1.a are not installed, where can we find them */
-	for (i = 1; i < argc; ++i) {
-		char *a = argv[i];
-		if (a[0] == '-') {
-			if (a[1] == 'B')
-				tcc_set_lib_path(s, a+2);
-			else if (a[1] == 'I')
-				tcc_add_include_path(s, a+2);
-			else if (a[1] == 'L')
-				tcc_add_library_path(s, a+2);
-		}
-	}
-
 	/* MUST BE CALLED before any compilation */
 	tcc_set_output_type(s, TCC_OUTPUT_MEMORY);
+	return s;
+}
 
-	if (tcc_compile_string(s, code) == -1)
-		return 1;
+int main(int argc, char **argv) {
+	/* TIMER: Structs
+	 * startTime 
+	 * 			INITIALIZATION
+	 * initMeasure 
+	 * 			LOAD FILE
+	 * 			COMPILE FILE
+	 * compileMeasure
+	 * 			RELOCATE CODE 
+	 * endTime
+	 */
+	struct timeval startTime, initMeasure, compileMeasure[argc], compileEndMeasure, endTime;
+	
+	gettimeofday(&startTime, NULL);
+	if (argc != 2) {
+		/* INITIALIZATION */
+		TCCState *s = init();
+		gettimeofday(&initMeasure, NULL);
 
-	/* as a test, we add symbols that the compiled program can use.
-	   You may also open a dll with tcc_add_dll() and use symbols from that */
-	tcc_add_symbol(s, "add", add);
-	tcc_add_symbol(s, "hello", hello);
+		/* Start of compilation */
+		for (int i = 1; i < argc; i++) {
+			/* LOAD & COMPILE FILE */
+			char *code = get_file_content(argv[i]);
+			if (tcc_compile_string(s, code) == -1) {
+				exit(0);
+			}
 
-	/* relocate the code */
-	if (tcc_relocate(s, TCC_RELOCATE_AUTO) < 0)
-		return 1;
+			gettimeofday(&compileMeasure[i], NULL);
+		}
 
-	/* get entry symbol */
-	func = tcc_get_symbol(s, "foo");
-	if (!func)
-		return 1;
+		/* End of compilation */
+		gettimeofday(&compileEndMeasure, NULL);
 
-	/* run the code */
-	func(32);
+		/* RELOCATE CODE */
+		if (tcc_relocate(s, TCC_RELOCATE_AUTO) < 0)
+			return 1;
+	
+		/* Deleting the state */
+		tcc_delete(s);
 
-	/* delete the state */
-	tcc_delete(s);
+		gettimeofday(&endTime, NULL);
 
-	return 0;
+		fprintf(stdout, "Initialization time: %d (micro sec)\n", getTime(&startTime, &initMeasure));
+		fprintf(stdout, "Parse and Compile, total time: %d (micro sec)\n", getTime(&initMeasure, &compileEndMeasure));
+		fprintf(stdout, "Relocate time: %d (micro sec)\n", getTime(&compileEndMeasure, &endTime));
+	} else {
+		// Run some tests
+		TCCState *s = init();
+		char *code = get_file_content(argv[1]);
+		if (tcc_compile_string(s, code) == -1) {
+			exit(1);
+		}
+
+		/* as a test, we add symbols that the compiled program can use.
+		   You may also open a dll with tcc_add_dll() and use symbols from that */
+		tcc_add_symbol(s, "add", add);
+		tcc_add_symbol(s, "hello", hello);
+
+		/* RELOCATE CODE */
+		if (tcc_relocate(s, TCC_RELOCATE_AUTO) < 0) {
+			exit(1);
+		}
+
+		/* get entry symbol */
+		int (*func)(int);
+		func = tcc_get_symbol(s, "foo");
+		if (!func) {
+			exit(1);
+		}
+
+		/* run the code */
+		func(32);
+
+		/* Deleting the state */
+		tcc_delete(s);
+	}
 }
