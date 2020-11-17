@@ -13,6 +13,7 @@ ls ~/AnghaBench | while read line; do
 
 	# Collect some data
 	echo $line $LOC >> temp.data
+	echo Done $line
 done
 
 # Compile data files to CSV files

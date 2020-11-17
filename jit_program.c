@@ -32,6 +32,7 @@ char *get_file_content(char* file) {
 	fread(code, 1, file_size, fp);
 	fclose(fp);
 
+	*(code + file_size) = '\0';
 	return code;
 }
 
@@ -77,7 +78,16 @@ int main(int argc, char **argv) {
 			/* LOAD & COMPILE FILE */
 			char *code = get_file_content(argv[i]);
 			if (tcc_compile_string(s, code) == -1) {
-				exit(0);
+				//fprintf(stderr, "Failed to compile file %s\n", argv[i]);
+				//fprintf(stderr, "Trying to add library\n");
+
+				if (tcc_add_file(s, argv[i]) == -1) {
+					//fprintf(stderr, "Failed to compile\n");
+				} else {
+					//fprintf(stderr, "Succeeded compilation\n");
+				}
+			} else {
+				//fprintf(stderr, "Compilation of %s succees\n", argv[i]);
 			}
 
 			gettimeofday(&compileMeasure[i], NULL);
@@ -87,8 +97,8 @@ int main(int argc, char **argv) {
 		gettimeofday(&compileEndMeasure, NULL);
 
 		/* RELOCATE CODE */
-		if (tcc_relocate(s, TCC_RELOCATE_AUTO) < 0)
-			return 1;
+		//if (tcc_relocate(s, TCC_RELOCATE_AUTO) < 0)
+		//	return 1;
 	
 		/* Deleting the state */
 		tcc_delete(s);
