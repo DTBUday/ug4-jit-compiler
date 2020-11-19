@@ -2,6 +2,8 @@
 
 # Remove temp file
 rm report/* temp.data
+mkdir report
+mkdir trash
 
 # Generate the GCC report file
 ls ~/AnghaBench | while read line; do

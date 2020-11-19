@@ -1,4 +1,4 @@
-#include <tcclib.h>
+#include <stdio.h>
 
 extern int add(int a, int b);
 
@@ -6,7 +6,7 @@ extern int add(int a, int b);
 __attribute__((dllimport))
 #endif
 
-	extern const char hello[];
+extern const char hello[];
 int fib(int n)
 {
 	if (n <= 2)
