@@ -5,7 +5,7 @@ import sys
 
 csvfile = open('summary.csv', 'w', newline='')
 writer = csv.writer(csvfile)
-writer.writerow(['benchmark', 'loc', 'gcc_usr', 'gcc_sys', 'gcc_wall', 'gcc_ggc', 'tcc']);
+# writer.writerow(['benchmark', 'loc', 'gcc_usr', 'gcc_sys', 'gcc_wall', 'gcc_ggc', 'tcc']);
 schema = ['usr', 'sys', 'wall', 'ggc']
 
 
@@ -19,6 +19,7 @@ for line in sys.stdin:
 	for label in schema:
 		output[label] = 0.0
 
+	# Reading GCC file
 	f = open(gcc_report_file, "r")
 	content = f.read().split('\n')
 	for line in content:
@@ -28,4 +29,18 @@ for line in sys.stdin:
 				output[label] += float(dat)
 	f.close()
 
-	writer.writerow([benchmark_name, lines_of_code, output['usr'], output['sys'], output['wall'], output['ggc'], 0])
+	# Reading TCC file
+	f = open(tcc_report_file, "r")
+	content = f.read().split('\n')
+	if (len(content) == 0):
+		print(f"No data for {benchmark_name}")
+	else:
+		output['tcc'] = 0
+		for line in content:
+			if line == '':
+				continue
+			temp = line.split(' ')
+			output['tcc'] += float(temp[-3])/1000000
+		
+
+	writer.writerow([benchmark_name, lines_of_code, output['usr'], output['sys'], output['wall'], output['ggc'], output['tcc']])
