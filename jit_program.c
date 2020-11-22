@@ -66,6 +66,7 @@ int main(int argc, char **argv) {
 	 * endTime
 	 */
 	struct timeval startTime, initMeasure, compileMeasure[argc], compileEndMeasure, endTime;
+	fprintf(stdout, "Compiling %s", argv[1]);
 	
 	gettimeofday(&startTime, NULL);
 	if (argc != 2) {
