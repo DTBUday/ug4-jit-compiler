@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "../tcc/include/libtcc.h"
+#include "../tinycc/include/libtcc.h"
 
 /* this function is called by the generated code */
 int add(int a, int b) {
@@ -41,6 +41,10 @@ int getTime(struct timeval *startTime, struct timeval *endTime) {
 	return elapsed;
 }
 
+void handle_error(void *opaque, const char *msg) {
+    fprintf(opaque, "%s\n", msg);
+}
+
 TCCState *init() {
 	TCCState *s;
 	s = tcc_new();
@@ -48,6 +52,8 @@ TCCState *init() {
 		fprintf(stderr, "Could not create tcc state\n");
 		exit(1);
 	}
+
+	tcc_set_error_func(s, stderr, handle_error);
 
 	/* MUST BE CALLED before any compilation */
 	tcc_set_output_type(s, TCC_OUTPUT_MEMORY);
