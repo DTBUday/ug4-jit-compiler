@@ -1,0 +1,24 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 14.29      0.03     0.03                             next_nomacro1
+ 14.29      0.06     0.03                             tok_str_add2
+  9.52      0.08     0.02                             cstr_ccat
+  9.52      0.10     0.02                             tal_realloc_impl
+  4.76      0.11     0.01                             arm64_pcs_aux
+  4.76      0.12     0.01                             end_macro
+  4.76      0.13     0.01                             init_assert
+  4.76      0.14     0.01                             macro_subst
+  4.76      0.15     0.01                             next_argstream
+  4.76      0.16     0.01                             next_nomacro
+  4.76      0.17     0.01                             parse_btype
+  4.76      0.18     0.01                             sym_find2
+  4.76      0.19     0.01                             tccgen_init
+  4.76      0.20     0.01                             tccpp_delete
+  4.76      0.21     0.01                             tok_alloc
+  0.00      0.21     0.00      855     0.00     0.00  get_file_content
+  0.00      0.21     0.00      370     0.00     0.00  handle_error
+  0.00      0.21     0.00        3     0.00     0.00  getTime
+  0.00      0.21     0.00        1     0.00     0.00  init

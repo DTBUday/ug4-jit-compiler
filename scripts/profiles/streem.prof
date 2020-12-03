@@ -1,0 +1,15 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 28.57      0.02     0.02                             macro_subst
+ 14.29      0.03     0.01                             arm64_pcs_aux
+ 14.29      0.04     0.01                             get_tok_str
+ 14.29      0.05     0.01                             next
+ 14.29      0.06     0.01                             tccgen_init
+ 14.29      0.07     0.01                             tok_alloc
+  0.00      0.07     0.00      398     0.00     0.00  get_file_content
+  0.00      0.07     0.00       15     0.00     0.00  handle_error
+  0.00      0.07     0.00        3     0.00     0.00  getTime
+  0.00      0.07     0.00        1     0.00     0.00  init

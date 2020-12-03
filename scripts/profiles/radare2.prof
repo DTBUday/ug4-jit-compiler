@@ -1,0 +1,11 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 50.00      0.01     0.01                             cstr_ccat
+ 50.00      0.02     0.01                             sym_push2
+  0.00      0.02     0.00      133     0.00     0.00  get_file_content
+  0.00      0.02     0.00       10     0.00     0.00  handle_error
+  0.00      0.02     0.00        3     0.00     0.00  getTime
+  0.00      0.02     0.00        1     0.00     0.00  init

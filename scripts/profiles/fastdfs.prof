@@ -1,0 +1,16 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 25.00      0.02     0.02                             macro_subst
+ 12.50      0.03     0.01                             next_argstream
+ 12.50      0.04     0.01                             next_nomacro1
+ 12.50      0.05     0.01                             parse_define
+ 12.50      0.06     0.01                             sym_push2
+ 12.50      0.07     0.01                             tccpp_delete
+ 12.50      0.08     0.01                             tok_str_add2
+  0.00      0.08     0.00      299     0.00     0.00  get_file_content
+  0.00      0.08     0.00       50     0.00     0.00  handle_error
+  0.00      0.08     0.00        3     0.00     0.00  getTime
+  0.00      0.08     0.00        1     0.00     0.00  init

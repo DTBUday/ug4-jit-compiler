@@ -1,0 +1,10 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00       37     0.00     0.00  get_file_content
+  0.00      0.00     0.00        3     0.00     0.00  getTime
+  0.00      0.00     0.00        1     0.00     0.00  init

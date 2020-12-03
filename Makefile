@@ -6,3 +6,4 @@ jit: jit_program$(EXESUF)
 
 jit_program$(EXESUF): jit_program.c ~/tinycc/lib/libtcc.a
 	$(CC) -o build/$@ $^ $(LIBS)
+	$(CC) -o build/profile_jit $^ $(LIBS) -Wall -pg

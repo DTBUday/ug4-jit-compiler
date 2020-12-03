@@ -1,0 +1,10 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+100.01      0.02     0.02                             tok_str_add2
+  0.00      0.02     0.00      151     0.00     0.00  get_file_content
+  0.00      0.02     0.00      150     0.00     0.00  handle_error
+  0.00      0.02     0.00        3     0.00     0.00  getTime
+  0.00      0.02     0.00        1     0.00     0.00  init

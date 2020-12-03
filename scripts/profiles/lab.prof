@@ -1,0 +1,28 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 21.43      0.09     0.09                             tok_str_add2
+ 19.05      0.17     0.08                             next_argstream
+ 14.29      0.23     0.06                             next_nomacro1
+  4.76      0.25     0.02                             macro_subst
+  4.76      0.27     0.02                             parse_btype
+  4.76      0.29     0.02                             put_elf_sym
+  4.76      0.31     0.02                             tal_realloc_impl
+  2.38      0.32     0.01                             gen_op
+  2.38      0.33     0.01                             gen_opic
+  2.38      0.34     0.01                             next_nomacro
+  2.38      0.35     0.01                             pop_local_syms.constprop.0
+  2.38      0.36     0.01                             post_type
+  2.38      0.37     0.01                             sym_find2
+  2.38      0.38     0.01                             sym_push2
+  2.38      0.39     0.01                             tok_alloc
+  2.38      0.40     0.01                             tok_alloc_new
+  2.38      0.41     0.01                             unary
+  1.19      0.42     0.01                             handle_eob
+  1.19      0.42     0.01                             search_cached_include
+  0.00      0.42     0.00     1631     0.00     0.00  get_file_content
+  0.00      0.42     0.00      285     0.00     0.00  handle_error
+  0.00      0.42     0.00        3     0.00     0.00  getTime
+  0.00      0.42     0.00        1     0.00     0.00  init
