@@ -3,24 +3,28 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
- 18.18      0.06     0.06                             next_nomacro1
- 12.12      0.10     0.04                             sym_push2
- 12.12      0.14     0.04                             tccpp_new
- 10.61      0.18     0.04                             tok_str_add2
-  6.06      0.20     0.02                             next_argstream
-  6.06      0.22     0.02                             parse_btype
-  3.03      0.23     0.01                             arm64_gen_bl_or_b
-  3.03      0.24     0.01                             decl_initializer
-  3.03      0.25     0.01                             find_elf_sym
-  3.03      0.26     0.01                             preprocess
-  3.03      0.27     0.01                             preprocess_start
-  3.03      0.28     0.01                             tcc_open_bf
-  3.03      0.29     0.01                             tok_alloc
-  3.03      0.30     0.01                             tok_alloc_new
-  3.03      0.31     0.01                             type_size
-  3.03      0.32     0.01                             unary
-  3.03      0.33     0.01                             verify_assign_cast
-  1.52      0.33     0.01                             handle_stray1
+ 15.15      0.05     0.05                             tok_alloc
+ 12.12      0.09     0.04                             tok_str_add2
+  6.06      0.11     0.02                             next_argstream
+  6.06      0.13     0.02                             parse_btype
+  6.06      0.15     0.02                             sym_push
+  6.06      0.17     0.02                             sym_push2
+  4.55      0.19     0.02                             parse_pp_string
+  3.03      0.20     0.01                             cstr_ccat
+  3.03      0.21     0.01                             decl0
+  3.03      0.22     0.01                             handle_eob
+  3.03      0.23     0.01                             macro_subst
+  3.03      0.24     0.01                             next_nomacro1
+  3.03      0.25     0.01                             preprocess_start
+  3.03      0.26     0.01                             sym_find2
+  3.03      0.27     0.01                             tal_realloc_impl
+  3.03      0.28     0.01                             tcc_get_debug_info
+  3.03      0.29     0.01                             tcc_malloc
+  3.03      0.30     0.01                             tccgen_init
+  3.03      0.31     0.01                             tccpp_new
+  3.03      0.32     0.01                             tok_alloc_new
+  3.03      0.33     0.01                             vswap
+  1.52      0.33     0.01                             cstr_cat
   0.00      0.33     0.00     1194     0.00     0.00  get_file_content
   0.00      0.33     0.00      178     0.00     0.00  handle_error
   0.00      0.33     0.00        3     0.00     0.00  getTime

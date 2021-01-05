@@ -3,10 +3,9 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
- 33.34      0.01     0.01                             macro_subst
- 33.34      0.02     0.01                             main
- 33.34      0.03     0.01                             next_nomacro1
-  0.00      0.03     0.00      156     0.00     0.00  get_file_content
-  0.00      0.03     0.00       50     0.00     0.00  handle_error
-  0.00      0.03     0.00        3     0.00     0.00  getTime
-  0.00      0.03     0.00        1     0.00     0.00  init
+ 50.00      0.01     0.01                             next_nomacro1
+ 50.00      0.02     0.01                             tok_str_add2
+  0.00      0.02     0.00      156     0.00     0.00  get_file_content
+  0.00      0.02     0.00       50     0.00     0.00  handle_error
+  0.00      0.02     0.00        3     0.00     0.00  getTime
+  0.00      0.02     0.00        1     0.00     0.00  init

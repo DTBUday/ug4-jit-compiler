@@ -1,0 +1,337 @@
+mkdir: cannot create directory 'perf_reports': File exists
+<string>:3: warning: implicit declaration of function 'printf'
+tcc: error: 'foo' defined twice
+/home/uday/trash/test.c:3: warning: implicit declaration of function 'printf'
+/home/uday/trash/test.c: error: 'foo' defined twice
+Compiling 2 filesInitialization time: 60 (micro sec)
+Parse and Compile, total time: 3483 (micro sec)
+Relocate time: 3 (micro sec)
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.002 MB perf.data (16 samples) ]
+<string>:212: warning: assignment makes pointer from integer without a cast
+<string>:212: warning: cast between pointer and integer of different size
+<string>:36: warning: function might return no value: 'char_type'
+<string>:4: error: field expected
+/home/uday/AnghaBench/8cc/test/extr_initializer.c_test_complex_designator.c:4: error: field expected
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_varargs.c_testmain.c: error: 'testmain' defined twice
+<string>:20: error: 'u8' undeclared
+/home/uday/AnghaBench/8cc/test/extr_literal.c_test_string.c:20: error: 'u8' undeclared
+<string>:29: warning: assignment from incompatible pointer type
+<string>:5: warning: implicit declaration of function 'expect'
+<string>:3: warning: assignment from incompatible pointer type
+<string>:5: warning: assignment from incompatible pointer type
+<string>:7: warning: implicit declaration of function 'expect'
+<string>:5: warning: implicit declaration of function 'expect'
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_extern.c_testmain.c: error: 'testmain' defined twice
+<string>:24: error: 'U' undeclared
+/home/uday/AnghaBench/8cc/test/extr_literal.c_test_ucn.c:24: error: 'U' undeclared
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_typeof.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_assign.c_testmain.c: error: 'testmain' defined twice
+<string>:19: warning: function might return no value: 't8'
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_macro.c_testmain.c: error: 'testmain' defined twice
+<string>:36: warning: cast between pointer and integer of different size
+<string>:5: warning: assignment from incompatible pointer type
+<string>:6: warning: implicit declaration of function 'expect'
+<string>:3: warning: implicit declaration of function 'expect'
+<string>:4: warning: implicit declaration of function 'verify'
+<string>:3: warning: implicit declaration of function 'expect'
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_bitop.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_comp.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_funcargs.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_array.c_testmain.c: error: 'testmain' defined twice
+<string>:5: warning: implicit declaration of function 'expect'
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_pointer.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_arith.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_stmtexpr.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_struct.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_union.c_testmain.c: error: 'testmain' defined twice
+<string>:5: warning: implicit declaration of function 'expect'
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_import.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_int.c_testmain.c: error: 'testmain' defined twice
+<string>:3: warning: assignment from incompatible pointer type
+<string>:5: warning: implicit declaration of function 'expect'
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_usualconv.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_float.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_conversion.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_type.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_scope.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_includeguard.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_builtin.c_testmain.c: error: 'testmain' defined twice
+<string>:25: error: too many initializers
+/home/uday/AnghaBench/8cc/test/extr_initializer.c_test_excessive.c:25: error: too many initializers
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_constexpr.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_lex.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_decl.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_global.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_enum.c_testmain.c: error: 'testmain' defined twice
+<string>:3: warning: implicit declaration of function 'expect'
+<string>:5: warning: implicit declaration of function 'expect'
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_generic.c_testmain.c: error: 'testmain' defined twice
+<string>:3: warning: implicit declaration of function 'expect'
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_literal.c_testmain.c: error: 'testmain' defined twice
+<string>:3: warning: assignment from incompatible pointer type
+<string>:5: warning: implicit declaration of function 't6a'
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_sizeof.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_control.c_testmain.c: error: 'testmain' defined twice
+<string>:3: warning: implicit declaration of function 'expect_string'
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_cast.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_oldstyle.c_testmain.c: error: 'testmain' defined twice
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_initializer.c_testmain.c: error: 'testmain' defined twice
+<string>:3: warning: assignment from incompatible pointer type
+<string>:5: warning: implicit declaration of function 'expect'
+tcc: error: 'testmain' defined twice
+/home/uday/AnghaBench/8cc/test/extr_noreturn.c_testmain.c: error: 'testmain' defined twice
+<string>:68: warning: function might return no value: 'read_primary_expr'
+<string>:42: warning: function might return no value: 'read_rune'
+<string>:3: warning: implicit declaration of function 'error'
+<string>:34: warning: assignment makes pointer from integer without a cast
+<string>:34: warning: cast between pointer and integer of different size
+<string>:79: warning: function might return no value: 'read_expand_newline'
+tcc: error: 'get_base_file' defined twice
+/home/uday/AnghaBench/8cc/extr_main.c_get_base_file.c: error: 'get_base_file' defined twice
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/8cc/extr_main.c_main.c: error: 'main' defined twice
+<string>:98: warning: assignment makes pointer from integer without a cast
+<string>:98: warning: cast between pointer and integer of different size
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/8cc/extr_utiltest.c_main.c: error: 'main' defined twice
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.037 MB perf.data (932 samples) ]
+./perf_script.sh: line 12:  6870 Segmentation fault      (core dumped) perf record ../build/jit_program $(find ~/AnghaBench/$line -type f) -o perf_reports/$line.data
+Done 8cc
+tcc: error: 'sfs_ls' defined twice
+/home/uday/AnghaBench/AppImageKit/src/extr_appimagetool.c_sfs_ls.c: error: 'sfs_ls' defined twice
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/AppImageKit/src/extr_digest_md5.c_main.c: error: 'main' defined twice
+tcc: error: 'sha256_file' defined twice
+/home/uday/AnghaBench/AppImageKit/src/extr_digest.c_sha256_file.c: error: 'sha256_file' defined twice
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/AppImageKit/src/extr_appimagetoolnoglib.c_main.c: error: 'main' defined twice
+tcc: error: 'sfs_mksquashfs' defined twice
+/home/uday/AnghaBench/AppImageKit/src/extr_appimagetool.c_sfs_mksquashfs.c: error: 'sfs_mksquashfs' defined twice
+<string>:163: warning: pointer/integer mismatch in conditional expression
+<string>:166: warning: pointer/integer mismatch in conditional expression
+<string>:169: warning: pointer/integer mismatch in conditional expression
+<string>:172: warning: pointer/integer mismatch in conditional expression
+<string>:175: warning: pointer/integer mismatch in conditional expression
+<string>:179: warning: pointer/integer mismatch in conditional expression
+<string>:182: warning: pointer/integer mismatch in conditional expression
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/AppImageKit/src/extr_AppRun.c_main.c:163: warning: pointer/integer mismatch in conditional expression
+/home/uday/AnghaBench/AppImageKit/src/extr_AppRun.c_main.c:166: warning: pointer/integer mismatch in conditional expression
+/home/uday/AnghaBench/AppImageKit/src/extr_AppRun.c_main.c:169: warning: pointer/integer mismatch in conditional expression
+/home/uday/AnghaBench/AppImageKit/src/extr_AppRun.c_main.c:172: warning: pointer/integer mismatch in conditional expression
+/home/uday/AnghaBench/AppImageKit/src/extr_AppRun.c_main.c:175: warning: pointer/integer mismatch in conditional expression
+/home/uday/AnghaBench/AppImageKit/src/extr_AppRun.c_main.c:179: warning: pointer/integer mismatch in conditional expression
+/home/uday/AnghaBench/AppImageKit/src/extr_AppRun.c_main.c:182: warning: pointer/integer mismatch in conditional expression
+/home/uday/AnghaBench/AppImageKit/src/extr_AppRun.c_main.c: error: 'main' defined twice
+<string>:45: warning: function might return no value: 'build_mount_point'
+<string>:85: warning: assignment makes integer from pointer without a cast
+<string>:85: warning: cast between pointer and integer of different size
+<string>:108: warning: assignment makes integer from pointer without a cast
+<string>:108: warning: cast between pointer and integer of different size
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/AppImageKit/src/extr_validate.c_main.c:85: warning: assignment makes integer from pointer without a cast
+/home/uday/AnghaBench/AppImageKit/src/extr_validate.c_main.c:85: warning: cast between pointer and integer of different size
+/home/uday/AnghaBench/AppImageKit/src/extr_validate.c_main.c:108: warning: assignment makes integer from pointer without a cast
+/home/uday/AnghaBench/AppImageKit/src/extr_validate.c_main.c:108: warning: cast between pointer and integer of different size
+/home/uday/AnghaBench/AppImageKit/src/extr_validate.c_main.c: error: 'main' defined twice
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.006 MB perf.data (127 samples) ]
+./perf_script.sh: line 12:  6883 Segmentation fault      (core dumped) perf record ../build/jit_program $(find ~/AnghaBench/$line -type f) -o perf_reports/$line.data
+Done AppImageKit
+<string>:48: warning: assignment discards qualifiers from pointer target type
+<string>:50: warning: assignment discards qualifiers from pointer target type
+<string>:99: warning: assignment makes pointer from integer without a cast
+<string>:99: warning: cast between pointer and integer of different size
+<string>:44: warning: cast between pointer and integer of different size
+<string>:37: warning: assignment makes pointer from integer without a cast
+<string>:37: warning: cast between pointer and integer of different size
+<string>:41: warning: assignment makes pointer from integer without a cast
+<string>:41: warning: cast between pointer and integer of different size
+<string>:34: warning: assignment makes pointer from integer without a cast
+<string>:34: warning: cast between pointer and integer of different size
+<string>:4: warning: implicit declaration of function 'printf'
+<string>:18: error: constant expression expected
+/home/uday/AnghaBench/Arduino/tests/device/test_libc/extr_memmove1.c_fill.c:18: error: constant expression expected
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.006 MB perf.data (119 samples) ]
+./perf_script.sh: line 12:  6901 Segmentation fault      (core dumped) perf record ../build/jit_program $(find ~/AnghaBench/$line -type f) -o perf_reports/$line.data
+Done Arduino
+<string>:21: warning: function might return no value: 'string_free'
+<string>:81: warning: assignment makes integer from pointer without a cast
+<string>:81: warning: cast between pointer and integer of different size
+<string>:98: warning: assignment makes integer from pointer without a cast
+<string>:98: warning: cast between pointer and integer of different size
+<string>:117: warning: assignment makes integer from pointer without a cast
+<string>:117: warning: cast between pointer and integer of different size
+<string>:251: warning: assignment makes pointer from integer without a cast
+<string>:251: warning: cast between pointer and integer of different size
+<string>:30: warning: assignment makes integer from pointer without a cast
+<string>:30: warning: cast between pointer and integer of different size
+<string>:32: warning: assignment makes integer from pointer without a cast
+<string>:32: warning: cast between pointer and integer of different size
+<string>:25: warning: assignment makes pointer from integer without a cast
+<string>:26: warning: assignment makes pointer from integer without a cast
+<string>:27: warning: assignment makes pointer from integer without a cast
+<string>:28: warning: assignment makes pointer from integer without a cast
+<string>:34: warning: assignment makes integer from pointer without a cast
+<string>:34: warning: cast between pointer and integer of different size
+<string>:30: warning: assignment makes integer from pointer without a cast
+<string>:31: warning: assignment makes integer from pointer without a cast
+<string>:27: warning: assignment makes integer from pointer without a cast
+<string>:27: warning: cast between pointer and integer of different size
+<string>:28: warning: assignment makes integer from pointer without a cast
+<string>:28: warning: cast between pointer and integer of different size
+<string>:42: warning: assignment makes pointer from integer without a cast
+<string>:42: warning: cast between pointer and integer of different size
+<string>:35: warning: assignment makes integer from pointer without a cast
+<string>:35: warning: cast between pointer and integer of different size
+<string>:37: warning: assignment makes integer from pointer without a cast
+<string>:37: warning: cast between pointer and integer of different size
+<string>:53: warning: assignment makes integer from pointer without a cast
+<string>:53: warning: cast between pointer and integer of different size
+<string>:60: warning: assignment makes integer from pointer without a cast
+<string>:60: warning: cast between pointer and integer of different size
+<string>:62: warning: assignment makes integer from pointer without a cast
+<string>:62: warning: cast between pointer and integer of different size
+<string>:28: warning: assignment makes integer from pointer without a cast
+<string>:29: warning: assignment makes integer from pointer without a cast
+<string>:22: warning: assignment makes pointer from integer without a cast
+<string>:275: warning: pointer/integer mismatch in comparison
+<string>:30: warning: assignment makes integer from pointer without a cast
+<string>:30: warning: cast between pointer and integer of different size
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/Atlas/src/extr_mysql-proxy-cli.c_main.c: error: 'main' defined twice
+<string>:57: warning: assignment makes integer from pointer without a cast
+<string>:57: warning: cast between pointer and integer of different size
+<string>:60: warning: assignment makes integer from pointer without a cast
+<string>:60: warning: cast between pointer and integer of different size
+<string>:85: warning: assignment makes integer from pointer without a cast
+<string>:85: warning: cast between pointer and integer of different size
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/Atlas/src/extr_test-latency.c_main.c: error: 'main' defined twice
+<string>:32: warning: assignment from incompatible pointer type
+<string>:36: warning: assignment makes pointer from integer without a cast
+<string>:36: warning: cast between pointer and integer of different size
+<string>:39: warning: assignment makes pointer from integer without a cast
+<string>:39: warning: cast between pointer and integer of different size
+<string>:66: warning: assignment makes pointer from integer without a cast
+<string>:66: warning: cast between pointer and integer of different size
+<string>:51: warning: assignment makes pointer from integer without a cast
+<string>:51: warning: cast between pointer and integer of different size
+<string>:22: warning: assignment makes pointer from integer without a cast
+<string>:23: warning: assignment makes pointer from integer without a cast
+<string>:24: warning: assignment makes pointer from integer without a cast
+tcc: error: 'network_mysqld_proto_fields_get' defined twice
+/home/uday/AnghaBench/Atlas/src/extr_mysql-myisam-dump.c_network_mysqld_proto_fields_get.c: error: 'network_mysqld_proto_fields_get' defined twice
+<string>:24: warning: assignment makes pointer from integer without a cast
+<string>:25: warning: assignment makes pointer from integer without a cast
+<string>:26: warning: assignment makes pointer from integer without a cast
+<string>:96: warning: function might return no value: 'proxy_queue_add'
+<string>:47: warning: cast between pointer and integer of different size
+<string>:23: warning: assignment makes pointer from integer without a cast
+<string>:24: warning: assignment makes pointer from integer without a cast
+<string>:61: warning: cast between pointer and integer of different size
+<string>:65: warning: cast between pointer and integer of different size
+<string>:69: warning: cast between pointer and integer of different size
+<string>:25: warning: assignment makes pointer from integer without a cast
+<string>:26: warning: assignment makes pointer from integer without a cast
+<string>:27: warning: assignment makes pointer from integer without a cast
+<string>:28: warning: assignment makes pointer from integer without a cast
+<string>:22: warning: assignment makes pointer from integer without a cast
+tcc: error: 'network_mysqld_proto_fields_free' defined twice
+/home/uday/AnghaBench/Atlas/src/extr_mysql-binlog-dump.c_network_mysqld_proto_fields_free.c: error: 'network_mysqld_proto_fields_free' defined twice
+tcc: error: 'network_mysqld_proto_field_free' defined twice
+/home/uday/AnghaBench/Atlas/src/extr_mysql-binlog-dump.c_network_mysqld_proto_field_free.c: error: 'network_mysqld_proto_field_free' defined twice
+<string>:23: warning: assignment makes pointer from integer without a cast
+<string>:24: warning: assignment makes pointer from integer without a cast
+tcc: error: 'network_mysqld_proto_field_get_typestring' defined twice
+/home/uday/AnghaBench/Atlas/src/extr_mysql-binlog-dump.c_network_mysqld_proto_field_get_typestring.c: error: 'network_mysqld_proto_field_get_typestring' defined twice
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.033 MB perf.data (819 samples) ]
+./perf_script.sh: line 12:  6919 Segmentation fault      (core dumped) perf record ../build/jit_program $(find ~/AnghaBench/$line -type f) -o perf_reports/$line.data
+Done Atlas
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/Cello/examples/extr_cello_world.c_main.c: error: 'main' defined twice
+<string>:23: warning: assignment from incompatible pointer type
+<string>:24: warning: assignment from incompatible pointer type
+<string>:25: warning: assignment from incompatible pointer type
+<string>:31: warning: assignment from incompatible pointer type
+<string>:21: warning: assignment makes integer from pointer without a cast
+<string>:23: warning: assignment makes integer from pointer without a cast
+<string>:28: warning: assignment makes integer from pointer without a cast
+<string>:34: warning: assignment makes integer from pointer without a cast
+<string>:22: warning: assignment makes pointer from integer without a cast
+<string>:26: warning: assignment makes integer from pointer without a cast
+<string>:22: warning: assignment makes pointer from integer without a cast
+<string>:26: warning: assignment makes integer from pointer without a cast
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/Cello/benchmarks/GC/extr_gc_cello.c_main.c: error: 'main' defined twice
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/Cello/benchmarks/GC/extr_gc_c.c_main.c: error: 'main' defined twice
+<string>:30: warning: assignment from incompatible pointer type
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/Cello/benchmarks/ext/extr_genint.c_main.c: error: 'main' defined twice
+<string>:133: warning: assignment makes pointer from integer without a cast
+<string>:141: warning: assignment makes pointer from integer without a cast
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/Cello/benchmarks/ext/extr_cleantxt.c_main.c: error: 'main' defined twice
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/Cello/benchmarks/Matmul/extr_matmul_c.c_main.c: error: 'main' defined twice
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/Cello/benchmarks/Matmul/extr_matmul_cello.c_main.c: error: 'main' defined twice
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/Cello/benchmarks/Sudoku/extr_sudoku_c.c_main.c: error: 'main' defined twice
+tcc: error: 'main' defined twice
+/home/uday/AnghaBench/Cello/benchmarks/Sudoku/extr_sudoku_cello.c_main.c: error: 'main' defined twice
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.032 MB perf.data (787 samples) ]
+./perf_script.sh: line 12:  6937 Segmentation fault      (core dumped) perf record ../build/jit_program $(find ~/AnghaBench/$line -type f) -o perf_reports/$line.data
+Done Cello
+<string>:142: warning: cast between pointer and integer of different size
+tcc: error: '_glfwPlatformTerminate' defined twice
+/home/uday/AnghaBench/Cinder/src/glfw/src/extr_x11_init.c__glfwPlatformTerminate.c: error: '_glfwPlatformTerminate' defined twice
+tcc: error: '_glfwPlatformTerminate' defined twice
+/home/uday/AnghaBench/Cinder/src/glfw/src/extr_mir_init.c__glfwPlatformTerminate.c: error: '_glfwPlatformTerminate' defined twice
+tcc: error: '_glfwPlatformFocusWindow' defined twice
+/home/uday/AnghaBench/Cinder/src/glfw/src/extr_x11_window.c__glfwPlatformFocusWindow.c: error: '_glfwPlatformFocusWindow' defined twice
+tcc: error: '_glfwPlatformGetVideoMode' defined twice
+/home/uday/AnghaBench/Cinder/src/glfw/src/extr_x11_monitor.c__glfwPlatformGetVideoMode.c: error: '_glfwPlatformGetVideoMode' defined twice
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.004 MB perf.data (76 samples) ]

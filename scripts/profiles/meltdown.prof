@@ -1,11 +1,26 @@
 Flat profile:
 
 Each sample counts as 0.01 seconds.
- no time accumulated
-
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
-  0.00      0.00     0.00       32     0.00     0.00  get_file_content
-  0.00      0.00     0.00       20     0.00     0.00  handle_error
-  0.00      0.00     0.00        3     0.00     0.00  getTime
-  0.00      0.00     0.00        1     0.00     0.00  init
+ 23.81      0.10     0.10                             next_nomacro1
+ 14.29      0.16     0.06                             macro_subst
+  9.52      0.20     0.04                             tal_realloc_impl
+  7.14      0.23     0.03                             next
+  7.14      0.26     0.03                             next_argstream
+  5.95      0.29     0.03                             tok_str_add2
+  4.76      0.31     0.02                             get_reg
+  4.76      0.33     0.02                             parse_btype
+  4.76      0.35     0.02                             sym_push2
+  2.38      0.36     0.01                             arm64_pcs_aux
+  2.38      0.37     0.01                             decl0
+  2.38      0.38     0.01                             next_nomacro
+  2.38      0.39     0.01                             preprocess
+  2.38      0.40     0.01                             struct_decl
+  2.38      0.41     0.01                             sym_find2
+  2.38      0.42     0.01                             sym_pop
+  1.19      0.42     0.01                             handle_stray1
+  0.00      0.42     0.00     1460     0.00     0.00  get_file_content
+  0.00      0.42     0.00      695     0.00     0.00  handle_error
+  0.00      0.42     0.00        3     0.00     0.00  getTime
+  0.00      0.42     0.00        1     0.00     0.00  init

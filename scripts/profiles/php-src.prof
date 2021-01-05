@@ -3,18 +3,20 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
- 20.00      0.04     0.04                             next_argstream
- 15.00      0.07     0.03                             macro_subst
- 15.00      0.10     0.03                             next_nomacro1
- 15.00      0.13     0.03                             sym_find2
-  5.00      0.14     0.01                             cstr_ccat
-  5.00      0.15     0.01                             handle_eob
-  5.00      0.16     0.01                             next
-  5.00      0.17     0.01                             parse_btype
-  5.00      0.18     0.01                             tal_realloc_impl
-  5.00      0.19     0.01                             tok_str_add2
-  5.00      0.20     0.01                             type_size
-  0.00      0.20     0.00      807     0.00     0.00  get_file_content
-  0.00      0.20     0.00       85     0.00     0.00  handle_error
-  0.00      0.20     0.00        3     0.00     0.00  getTime
-  0.00      0.20     0.00        1     0.00     0.00  init
+ 15.79      0.03     0.03                             next_nomacro1
+ 10.53      0.05     0.02                             next_argstream
+ 10.53      0.07     0.02                             sym_find2
+ 10.53      0.09     0.02                             tal_realloc_impl
+ 10.53      0.11     0.02                             tccgen_init
+  5.26      0.12     0.01                             arm64_hfa
+  5.26      0.13     0.01                             get_reg
+  5.26      0.14     0.01                             get_tok_str
+  5.26      0.15     0.01                             next_nomacro
+  5.26      0.16     0.01                             parse_btype
+  5.26      0.17     0.01                             tok_alloc
+  5.26      0.18     0.01                             vpop
+  5.26      0.19     0.01                             vswap
+  0.00      0.19     0.00      807     0.00     0.00  get_file_content
+  0.00      0.19     0.00       85     0.00     0.00  handle_error
+  0.00      0.19     0.00        3     0.00     0.00  getTime
+  0.00      0.19     0.00        1     0.00     0.00  init

@@ -3,20 +3,20 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
- 18.75      0.03     0.03                             next_nomacro1
- 12.50      0.05     0.02                             next_argstream
- 12.50      0.07     0.02                             tal_realloc_impl
- 12.50      0.09     0.02                             unary
-  6.25      0.10     0.01                             macro_subst
-  6.25      0.11     0.01                             next
-  6.25      0.12     0.01                             next_nomacro
-  6.25      0.13     0.01                             skip
-  6.25      0.14     0.01                             sym_push2
-  3.13      0.15     0.01                             cstr_ccat
-  3.13      0.15     0.01                             expect
-  3.13      0.16     0.01                             handle_stray1
-  3.13      0.16     0.01                             tok_str_add2
-  0.00      0.16     0.00      829     0.00     0.00  get_file_content
-  0.00      0.16     0.00       44     0.00     0.00  handle_error
-  0.00      0.16     0.00        3     0.00     0.00  getTime
-  0.00      0.16     0.00        1     0.00     0.00  init
+ 15.79      0.03     0.03                             next_argstream
+ 15.79      0.06     0.03                             tok_str_add2
+ 10.53      0.08     0.02                             next_nomacro1
+ 10.53      0.10     0.02                             tal_realloc_impl
+  5.26      0.11     0.01                             end_macro
+  5.26      0.12     0.01                             free_defines
+  5.26      0.13     0.01                             handle_eob
+  5.26      0.14     0.01                             macro_subst
+  5.26      0.15     0.01                             parse_comment
+  5.26      0.16     0.01                             parse_define
+  5.26      0.17     0.01                             tccgen_init
+  5.26      0.18     0.01                             tok_alloc
+  5.26      0.19     0.01                             tok_str_add
+  0.00      0.19     0.00      829     0.00     0.00  get_file_content
+  0.00      0.19     0.00       44     0.00     0.00  handle_error
+  0.00      0.19     0.00        3     0.00     0.00  getTime
+  0.00      0.19     0.00        1     0.00     0.00  init

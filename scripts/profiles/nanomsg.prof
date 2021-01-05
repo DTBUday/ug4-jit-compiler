@@ -3,20 +3,18 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
- 21.05      0.04     0.04                             next_argstream
- 10.53      0.06     0.02                             macro_subst
- 10.53      0.08     0.02                             next
- 10.53      0.10     0.02                             sym_push2
-  5.26      0.11     0.01                             gen_opic
-  5.26      0.12     0.01                             load
-  5.26      0.13     0.01                             next_nomacro1
-  5.26      0.14     0.01                             parse_btype
-  5.26      0.15     0.01                             tccgen_init
-  5.26      0.16     0.01                             tok_alloc
-  5.26      0.17     0.01                             tok_str_add2
-  5.26      0.18     0.01                             type_size
-  5.26      0.19     0.01                             unary
-  0.00      0.19     0.00      660     0.00     0.00  get_file_content
-  0.00      0.19     0.00      250     0.00     0.00  handle_error
-  0.00      0.19     0.00        3     0.00     0.00  getTime
-  0.00      0.19     0.00        1     0.00     0.00  init
+ 26.67      0.04     0.04                             next_argstream
+ 13.33      0.06     0.02                             tok_str_add2
+  6.67      0.07     0.01                             macro_subst
+  6.67      0.08     0.01                             next_nomacro1
+  6.67      0.09     0.01                             parse_string
+  6.67      0.10     0.01                             preprocess
+  6.67      0.11     0.01                             sym_find2
+  6.67      0.12     0.01                             sym_pop
+  6.67      0.13     0.01                             tal_realloc_impl
+  6.67      0.14     0.01                             tcc_open_bf
+  6.67      0.15     0.01                             tok_str_add
+  0.00      0.15     0.00      660     0.00     0.00  get_file_content
+  0.00      0.15     0.00      250     0.00     0.00  handle_error
+  0.00      0.15     0.00        3     0.00     0.00  getTime
+  0.00      0.15     0.00        1     0.00     0.00  init

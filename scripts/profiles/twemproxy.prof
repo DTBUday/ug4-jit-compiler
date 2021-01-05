@@ -3,9 +3,10 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
- 50.00      0.03     0.03                             tal_realloc_impl
- 16.67      0.04     0.01                             decl0
- 16.67      0.05     0.01                             next_nomacro1
+ 33.34      0.02     0.02                             pp_line
+ 16.67      0.03     0.01                             define_push
+ 16.67      0.04     0.01                             next_nomacro1
+ 16.67      0.05     0.01                             parse_define
  16.67      0.06     0.01                             tok_alloc
   0.00      0.06     0.00      301     0.00     0.00  get_file_content
   0.00      0.06     0.00       20     0.00     0.00  handle_error

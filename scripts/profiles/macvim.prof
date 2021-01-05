@@ -3,27 +3,22 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
- 19.45      0.07     0.07                             next_argstream
- 13.89      0.12     0.05                             next_nomacro1
-  8.33      0.15     0.03                             macro_subst
-  5.56      0.17     0.02                             free_defines
-  5.56      0.19     0.02                             next_nomacro
-  5.56      0.21     0.02                             parse_btype
-  5.56      0.23     0.02                             sym_push2
-  4.17      0.25     0.02                             cstr_ccat
-  4.17      0.26     0.02                             tok_str_add2
-  2.78      0.27     0.01                             block
-  2.78      0.28     0.01                             new_symtab
-  2.78      0.29     0.01                             parse_comment
-  2.78      0.30     0.01                             parse_define
-  2.78      0.31     0.01                             pp_line
-  2.78      0.32     0.01                             preprocess
-  2.78      0.33     0.01                             sym_pop
-  2.78      0.34     0.01                             tok_alloc
-  2.78      0.35     0.01                             tok_str_add
-  1.39      0.36     0.01                             expect
-  1.39      0.36     0.01                             handle_stray1
-  0.00      0.36     0.00     1295     0.00     0.00  get_file_content
-  0.00      0.36     0.00      389     0.00     0.00  handle_error
-  0.00      0.36     0.00        3     0.00     0.00  getTime
-  0.00      0.36     0.00        1     0.00     0.00  init
+ 20.00      0.07     0.07                             next_nomacro1
+ 17.14      0.13     0.06                             next_argstream
+ 11.43      0.17     0.04                             macro_subst
+  8.57      0.20     0.03                             tok_str_add2
+  5.71      0.22     0.02                             free_defines
+  5.71      0.24     0.02                             next_nomacro
+  5.71      0.26     0.02                             sym_push2
+  5.71      0.28     0.02                             tal_realloc_impl
+  2.86      0.29     0.01                             cstr_ccat
+  2.86      0.30     0.01                             decl_initializer
+  2.86      0.31     0.01                             gen_cast
+  2.86      0.32     0.01                             parse_btype
+  2.86      0.33     0.01                             parse_comment
+  2.86      0.34     0.01                             preprocess
+  2.86      0.35     0.01                             type_decl
+  0.00      0.35     0.00     1295     0.00     0.00  get_file_content
+  0.00      0.35     0.00      389     0.00     0.00  handle_error
+  0.00      0.35     0.00        3     0.00     0.00  getTime
+  0.00      0.35     0.00        1     0.00     0.00  init

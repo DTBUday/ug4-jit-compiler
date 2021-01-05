@@ -4,24 +4,23 @@
 # Total Lost Samples: 0
 #
 # Samples: 17  of event 'cycles'
-# Event count (approx.): 9334218
+# Event count (approx.): 8916622
 #
-# Overhead  Command      Shared Object      Symbol                    
-# ........  ...........  .................  ..........................
+# Overhead  Command      Shared Object      Symbol                     
+# ........  ...........  .................  ...........................
 #
-    22.05%  jit_program  jit_program        [.] next
-    13.31%  jit_program  [kernel.kallsyms]  [k] down_read_trylock
-    12.42%  jit_program  [kernel.kallsyms]  [k] filemap_map_pages
-    12.36%  jit_program  [kernel.kallsyms]  [k] vmacache_find
-     9.91%  jit_program  jit_program        [.] parse_btype
-     9.30%  jit_program  jit_program        [.] sym_push
-     8.76%  jit_program  jit_program        [.] macro_subst_tok.isra.0
-     8.29%  jit_program  [kernel.kallsyms]  [k] zap_pte_range
-     3.37%  jit_program  [kernel.kallsyms]  [k] memcg_kmem_get_cache
-     0.22%  jit_program  [kernel.kallsyms]  [k] move_ptes.isra.2
+    21.52%  jit_program  [kernel.kallsyms]  [k] __arch_copy_to_user
+    19.61%  jit_program  jit_program        [.] next_nomacro1
+    13.29%  jit_program  jit_program        [.] get_tok_str
+    12.40%  jit_program  [kernel.kallsyms]  [k] __audit_syscall_entry
+    12.05%  jit_program  [kernel.kallsyms]  [k] unlock_page
+     9.42%  jit_program  [kernel.kallsyms]  [k] free_unref_page_prepare
+     8.45%  jit_program  [kernel.kallsyms]  [k] __tlb_remove_page_size
+     3.03%  jit_program  ld-2.32.so         [.] dl_main
+     0.21%  jit_program  [kernel.kallsyms]  [k] clear_page
      0.01%  perf         [kernel.kallsyms]  [k] perf_event_exec
 
 
 #
-# (Tip: Generate a script for your data: perf script -g <lang>)
+# (Tip: To record every process run by a user: perf record -u <user>)
 #

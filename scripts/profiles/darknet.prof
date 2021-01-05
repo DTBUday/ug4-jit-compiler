@@ -3,23 +3,23 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
- 21.74      0.05     0.05                             tal_realloc_impl
-  8.70      0.07     0.02                             next_argstream
-  8.70      0.09     0.02                             next_nomacro1
-  8.70      0.11     0.02                             tok_alloc
-  6.52      0.13     0.02                             tok_str_add2
-  4.35      0.14     0.01                             get_reg
-  4.35      0.15     0.01                             macro_subst
-  4.35      0.16     0.01                             next
-  4.35      0.17     0.01                             next_nomacro
-  4.35      0.18     0.01                             o
-  4.35      0.19     0.01                             post_type
-  4.35      0.20     0.01                             pp_line
-  4.35      0.21     0.01                             skip
-  4.35      0.22     0.01                             sym_find2
-  4.35      0.23     0.01                             tok_str_add
-  2.17      0.23     0.01                             handle_stray1
-  0.00      0.23     0.00      916     0.00     0.00  get_file_content
-  0.00      0.23     0.00      190     0.00     0.00  handle_error
-  0.00      0.23     0.00        3     0.00     0.00  getTime
-  0.00      0.23     0.00        1     0.00     0.00  init
+ 19.23      0.05     0.05                             next_nomacro1
+ 11.54      0.08     0.03                             tal_realloc_impl
+  7.69      0.10     0.02                             next_argstream
+  7.69      0.12     0.02                             next_nomacro
+  7.69      0.14     0.02                             parse_btype
+  7.69      0.16     0.02                             tok_str_add2
+  3.85      0.17     0.01                             arm64_ldrx
+  3.85      0.18     0.01                             combine_types
+  3.85      0.19     0.01                             macro_subst
+  3.85      0.20     0.01                             next
+  3.85      0.21     0.01                             store
+  3.85      0.22     0.01                             sym_copy_ref.constprop.0
+  3.85      0.23     0.01                             sym_find2
+  3.85      0.24     0.01                             sym_pop
+  3.85      0.25     0.01                             tccpp_new
+  3.85      0.26     0.01                             tok_alloc
+  0.00      0.26     0.00      916     0.00     0.00  get_file_content
+  0.00      0.26     0.00      190     0.00     0.00  handle_error
+  0.00      0.26     0.00        3     0.00     0.00  getTime
+  0.00      0.26     0.00        1     0.00     0.00  init

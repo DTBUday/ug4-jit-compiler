@@ -3,23 +3,23 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
- 24.00      0.06     0.06                             next_nomacro1
- 12.00      0.09     0.03                             next_argstream
-  8.00      0.11     0.02                             parse_comment
-  8.00      0.13     0.02                             tok_str_add2
-  4.00      0.14     0.01                             block
-  4.00      0.15     0.01                             decl_initializer_alloc
-  4.00      0.16     0.01                             expr_eq
-  4.00      0.17     0.01                             load
-  4.00      0.18     0.01                             next
-  4.00      0.19     0.01                             next_nomacro
-  4.00      0.20     0.01                             o
-  4.00      0.21     0.01                             parse_define
-  4.00      0.22     0.01                             sym_find2
-  4.00      0.23     0.01                             tal_realloc_impl
-  4.00      0.24     0.01                             tok_str_add
-  4.00      0.25     0.01                             vpushv
-  0.00      0.25     0.00      911     0.00     0.00  get_file_content
-  0.00      0.25     0.00      148     0.00     0.00  handle_error
-  0.00      0.25     0.00        3     0.00     0.00  getTime
-  0.00      0.25     0.00        1     0.00     0.00  init
+ 14.29      0.03     0.03                             next_nomacro1
+  9.52      0.05     0.02                             macro_subst
+  9.52      0.07     0.02                             next
+  9.52      0.09     0.02                             tok_str_add2
+  4.76      0.10     0.01                             build_got
+  4.76      0.11     0.01                             next_argstream
+  4.76      0.12     0.01                             next_nomacro
+  4.76      0.13     0.01                             parse_btype
+  4.76      0.14     0.01                             parse_define
+  4.76      0.15     0.01                             preprocess
+  4.76      0.16     0.01                             put_elf_reloca
+  4.76      0.17     0.01                             sym_find2
+  4.76      0.18     0.01                             tal_realloc_impl
+  4.76      0.19     0.01                             tccpp_new
+  4.76      0.20     0.01                             tok_alloc
+  4.76      0.21     0.01                             type_decl
+  0.00      0.21     0.00      911     0.00     0.00  get_file_content
+  0.00      0.21     0.00      148     0.00     0.00  handle_error
+  0.00      0.21     0.00        3     0.00     0.00  getTime
+  0.00      0.21     0.00        1     0.00     0.00  init

@@ -3,18 +3,20 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
- 39.13      0.09     0.09                             next_argstream
- 13.04      0.12     0.03                             macro_subst
- 10.87      0.15     0.03                             tok_str_add2
-  8.70      0.17     0.02                             next_nomacro1
-  4.35      0.18     0.01                             free_defines
-  4.35      0.19     0.01                             set_elf_sym
-  4.35      0.20     0.01                             tal_realloc_impl
-  4.35      0.21     0.01                             tccpp_new
-  4.35      0.22     0.01                             tok_alloc
-  4.35      0.23     0.01                             tok_str_add
-  2.17      0.23     0.01                             handle_stray1
-  0.00      0.23     0.00     1083     0.00     0.00  get_file_content
-  0.00      0.23     0.00      104     0.00     0.00  handle_error
-  0.00      0.23     0.00        3     0.00     0.00  getTime
-  0.00      0.23     0.00        1     0.00     0.00  init
+ 25.00      0.06     0.06                             next_nomacro1
+ 16.67      0.10     0.04                             tok_str_add2
+ 12.50      0.13     0.03                             next_argstream
+  8.33      0.15     0.02                             macro_subst
+  6.25      0.17     0.02                             tal_realloc_impl
+  4.17      0.18     0.01                             cstr_ccat
+  4.17      0.19     0.01                             get_reg
+  4.17      0.20     0.01                             next
+  4.17      0.21     0.01                             parse_btype
+  4.17      0.22     0.01                             pop_local_syms.constprop.0
+  4.17      0.23     0.01                             tok_str_add
+  4.17      0.24     0.01                             type_size
+  2.08      0.24     0.01                             pp_line
+  0.00      0.24     0.00     1083     0.00     0.00  get_file_content
+  0.00      0.24     0.00      104     0.00     0.00  handle_error
+  0.00      0.24     0.00        3     0.00     0.00  getTime
+  0.00      0.24     0.00        1     0.00     0.00  init

@@ -4,16 +4,18 @@ Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
  25.00      0.07     0.07                             next_nomacro1
- 14.29      0.11     0.04                             next_argstream
- 10.71      0.14     0.03                             tok_alloc
- 10.71      0.17     0.03                             tok_str_add2
-  7.14      0.19     0.02                             next_nomacro
-  7.14      0.21     0.02                             tal_realloc_impl
-  3.57      0.22     0.01                             block
-  3.57      0.23     0.01                             cstr_ccat
-  3.57      0.24     0.01                             decl_initializer
-  3.57      0.25     0.01                             find_elf_sym
-  3.57      0.26     0.01                             macro_subst
+ 17.86      0.12     0.05                             tok_str_add2
+ 10.71      0.15     0.03                             next_argstream
+  7.14      0.17     0.02                             tok_alloc
+  3.57      0.18     0.01                             decl0
+  3.57      0.19     0.01                             define_push
+  3.57      0.20     0.01                             get_reg
+  3.57      0.21     0.01                             next
+  3.57      0.22     0.01                             parse_btype
+  3.57      0.23     0.01                             pp_line
+  3.57      0.24     0.01                             sym_find2
+  3.57      0.25     0.01                             tal_realloc_impl
+  3.57      0.26     0.01                             tccgen_init
   3.57      0.27     0.01                             tok_alloc_new
   3.57      0.28     0.01                             tok_str_add
   0.00      0.28     0.00      981     0.00     0.00  get_file_content

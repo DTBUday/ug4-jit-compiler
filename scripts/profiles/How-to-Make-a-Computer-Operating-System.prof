@@ -3,10 +3,12 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
- 33.34      0.01     0.01                             next_nomacro1
- 33.34      0.02     0.01                             tccpp_new
- 33.34      0.03     0.01                             tok_str_add2
-  0.00      0.03     0.00      272     0.00     0.00  get_file_content
-  0.00      0.03     0.00       69     0.00     0.00  handle_error
-  0.00      0.03     0.00        3     0.00     0.00  getTime
-  0.00      0.03     0.00        1     0.00     0.00  init
+ 33.34      0.02     0.02                             next_nomacro1
+ 16.67      0.03     0.01                             next
+ 16.67      0.04     0.01                             next_argstream
+ 16.67      0.05     0.01                             sym_find2
+ 16.67      0.06     0.01                             tok_alloc_new
+  0.00      0.06     0.00      272     0.00     0.00  get_file_content
+  0.00      0.06     0.00       69     0.00     0.00  handle_error
+  0.00      0.06     0.00        3     0.00     0.00  getTime
+  0.00      0.06     0.00        1     0.00     0.00  init

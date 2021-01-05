@@ -3,29 +3,31 @@ Flat profile:
 Each sample counts as 0.01 seconds.
   %   cumulative   self              self     total           
  time   seconds   seconds    calls  Ts/call  Ts/call  name    
- 17.35      0.09     0.09                             tok_str_add2
- 12.25      0.15     0.06                             next_argstream
- 10.20      0.20     0.05                             next_nomacro1
-  8.16      0.24     0.04                             macro_subst
-  6.12      0.27     0.03                             next_nomacro
-  4.08      0.29     0.02                             parse_attribute
-  4.08      0.31     0.02                             pp_line
-  4.08      0.33     0.02                             struct_decl
-  4.08      0.35     0.02                             sym_push2
-  4.08      0.37     0.02                             tal_realloc_impl
-  4.08      0.39     0.02                             tok_alloc
-  2.04      0.40     0.01                             cstr_ccat
-  2.04      0.41     0.01                             decl0
-  2.04      0.42     0.01                             end_macro
-  2.04      0.43     0.01                             gv
-  2.04      0.44     0.01                             handle_eob
-  2.04      0.45     0.01                             parse_btype
-  2.04      0.46     0.01                             preprocess
-  2.04      0.47     0.01                             tccgen_init
-  2.04      0.48     0.01                             tccpp_new
-  2.04      0.49     0.01                             tok_str_add
-  1.02      0.49     0.01                             handle_stray1
-  0.00      0.49     0.00     2061     0.00     0.00  get_file_content
-  0.00      0.49     0.00      214     0.00     0.00  handle_error
+ 18.37      0.09     0.09                             next_argstream
+ 10.20      0.14     0.05                             next_nomacro1
+ 10.20      0.19     0.05                             tok_str_add2
+  8.16      0.23     0.04                             sym_push2
+  6.12      0.26     0.03                             next
+  6.12      0.29     0.03                             tok_alloc
+  4.08      0.31     0.02                             decl0
+  4.08      0.33     0.02                             macro_subst
+  4.08      0.35     0.02                             parse_string
+  2.04      0.36     0.01                             cstr_cat
+  2.04      0.37     0.01                             cstr_ccat
+  2.04      0.38     0.01                             gfunc_call
+  2.04      0.39     0.01                             gv
+  2.04      0.40     0.01                             next_nomacro
+  2.04      0.41     0.01                             parse_btype
+  2.04      0.42     0.01                             put_extern_sym2
+  2.04      0.43     0.01                             set_elf_sym
+  2.04      0.44     0.01                             sym_find2
+  2.04      0.45     0.01                             tal_realloc_impl
+  2.04      0.46     0.01                             tok_alloc_new
+  2.04      0.47     0.01                             tok_str_add
+  2.04      0.48     0.01                             type_decl
+  1.02      0.49     0.01                             _tcc_error
+  1.02      0.49     0.01                             tcc_malloc
+  0.00      0.49     0.00     1670     0.00     0.00  get_file_content
+  0.00      0.49     0.00      515     0.00     0.00  handle_error
   0.00      0.49     0.00        3     0.00     0.00  getTime
   0.00      0.49     0.00        1     0.00     0.00  init
