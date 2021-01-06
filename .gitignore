@@ -9,4 +9,7 @@ build/
 # Data files
 trash/
 report/
-
+*.prof
+*.dat
+*.data
+*.old

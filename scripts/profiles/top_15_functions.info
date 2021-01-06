@@ -1,0 +1,15 @@
+5.829999999999996 - next_nomacro1
+4.409999999999998 - next_argstream
+4.39 - tok_str_add2
+1.5500000000000003 - macro_subst
+1.4600000000000004 - tal_realloc_impl
+0.52 - tok_alloc
+0.49000000000000005 - tok_alloc_new
+0.4700000000000001 - next
+0.43 - sym_push2
+0.28 - tok_str_add
+0.28 - next_nomacro
+0.26 - cstr_ccat
+0.25 - sym_find2
+0.21999999999999997 - tccgen_init
+0.2 - parse_define
