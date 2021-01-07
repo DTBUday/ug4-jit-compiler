@@ -3,7 +3,7 @@
 mkdir perf_reports
 
 perf record ../build/jit_program ../program/basic.c ~/trash/test.c
-perf report > perf_reports/basic.dat
+perf report > perf_reports/basic.data
 
 ls ~/AnghaBench | while read line; do
 	find ~/AnghaBench/$line -type f | xargs perf record -o perf_reports/$line.data ../build/jit_program 
@@ -16,8 +16,3 @@ ls ~/AnghaBench | while read line; do
                 echo Failed $line
         fi
 done
-
-if [ $# -ne 0 ]
-then
-	echo doing extra
-fi

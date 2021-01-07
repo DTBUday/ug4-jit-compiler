@@ -12,7 +12,7 @@ ls ~/AnghaBench | while read line; do
 	find ~/AnghaBench/$line -type f | xargs ../build/jit_program > report/$line.tcc.report
 	if [ $? -eq 0 ]
 	then
-		find ~/AnghaBench/$line -type f | xargs gcc -ftime-report -c -w &>> report/$line.gcc.report
+		find ~/AnghaBench/$line -type f | xargs gcc -O0 -ftime-report -c -w &>> report/$line.gcc.report
 		rm *.o
 
 		# Collect some data

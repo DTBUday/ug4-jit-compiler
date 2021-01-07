@@ -1,4 +1,4 @@
-LIBS = -fno-strict-aliasing -I.. -I.. -lm -lpthread -ldl
+LIBS = -fno-strict-aliasing -I.. -I.. -lm -lpthread -ldl -O3
 
 jit: jit_program$(EXESUF)
 	@echo ----- $@ -----
