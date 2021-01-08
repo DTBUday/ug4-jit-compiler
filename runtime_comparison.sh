@@ -11,5 +11,7 @@ find ~/c-code-katas/ -type f | grep "\.c$" | while read line; do
   fi
 done
 
+rm gcc.log jit.log
+
 # cat comparison.log | grep real | sed -e 's/.*m//g' | sed -e 's/s$//g'
 # cat comparison.log | grep Execution | sed -e 's/.*:\ //g' | sed -e 's/\ (.*//g'
