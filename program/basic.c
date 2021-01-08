@@ -15,8 +15,9 @@ int fib(int n)
 		return fib(n-1) + fib(n-2);
 }
 
-int foo(int n)
+int main()
 {
+	int n = 32;
 	printf("%s\n", hello);
 	printf("fib(%d) = %d\n", n, fib(n));
 	printf("add(%d, %d) = %d\n", n, 2*n, add(n, 2 * n));

@@ -71,7 +71,7 @@ int main(int argc, char **argv) {
 	 * 			RELOCATE CODE 
 	 * endTime
 	 */
-	struct timeval startTime, initMeasure, compileMeasure[argc], compileEndMeasure, endTime;
+	struct timeval startTime, initMeasure, compileMeasure[argc], compileEndMeasure, endTime, relocateEndMeasure;
 	fprintf(stdout, "Compiling %d files", argc-1);
 	
 	gettimeofday(&startTime, NULL);
@@ -128,22 +128,30 @@ int main(int argc, char **argv) {
 		tcc_add_symbol(s, "add", add);
 		tcc_add_symbol(s, "hello", hello);
 
+		gettimeofday(&startTime, NULL);
 		/* RELOCATE CODE */
 		if (tcc_relocate(s, TCC_RELOCATE_AUTO) < 0) {
 			exit(1);
 		}
 
+		gettimeofday(&relocateEndMeasure, NULL);
+
 		/* get entry symbol */
-		int (*func)(int);
-		func = tcc_get_symbol(s, "foo");
+		int (*func)(void);
+		func = tcc_get_symbol(s, "main");
 		if (!func) {
 			exit(1);
 		}
 
 		/* run the code */
-		func(32);
+		func();
+		gettimeofday(&endTime, NULL);
 
 		/* Deleting the state */
 		tcc_delete(s);
+
+		fprintf(stderr, "Relocation time: %d (micro sec)\n", getTime(&startTime, &relocateEndMeasure));
+		fprintf(stderr, "Execution time: %d (micro sec)\n", getTime(&relocateEndMeasure, &endTime));
 	}
+	return 0;
 }
