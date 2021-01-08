@@ -150,8 +150,8 @@ int main(int argc, char **argv) {
 		/* Deleting the state */
 		tcc_delete(s);
 
-		fprintf(stderr, "Relocation time: %d (micro sec)\n", getTime(&startTime, &relocateEndMeasure));
-		fprintf(stderr, "Execution time: %d (micro sec)\n", getTime(&relocateEndMeasure, &endTime));
+		fprintf(stdout, "Relocation time: %d (micro sec)\n", getTime(&startTime, &relocateEndMeasure));
+		fprintf(stdout, "Execution time: %d (micro sec)\n", getTime(&startTime, &endTime));
 	}
 	return 0;
 }

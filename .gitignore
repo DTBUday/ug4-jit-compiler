@@ -3,8 +3,9 @@
 *.exe
 *.o
 
-# Build folder
+# Executable files
 build/
+timer_func
 
 # Data files
 trash/

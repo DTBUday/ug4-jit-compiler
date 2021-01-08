@@ -10,10 +10,10 @@ int main(int argc, char *argv[]) {
 	struct timeval startTime, endTime;
 	gettimeofday(&startTime, NULL);
 
-  // Execute command
-  system("./a.out");
+	// Execute command
+	system(argv[1]);
 
 	gettimeofday(&endTime, NULL);
 
-  fprintf(stdout, "Total execution time: %d\n", getTime(&startTime, &endTime));
+	fprintf(stdout, "Total execution time: %d (micro sec)\n", getTime(&startTime, &endTime));
 }
