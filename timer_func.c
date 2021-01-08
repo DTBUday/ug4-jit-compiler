@@ -12,12 +12,12 @@ int main(int argc, char *argv[]) {
 
 	// Execute command
 	int res = system(argv[1]);
+	if (res) {
+		exit(-1);
+	}
 
 	gettimeofday(&endTime, NULL);
 
 	fprintf(stdout, "Total execution time: %d (micro sec)\n", getTime(&startTime, &endTime));
-	if (res) {
-		exit(-1);
-	}
 	return 0;
 }
