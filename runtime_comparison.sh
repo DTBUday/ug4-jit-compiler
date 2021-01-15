@@ -4,7 +4,7 @@ find ~/c-code-katas/ -type f | grep "\.c$" | while read line; do
   ./timer_func "./build/jit_program $line > jit.log"
   if [ $? -eq 0 ]; then 
     gcc $line -lm -w -O3 > gcc.log
-    ./timer_func ./a.out
+    ./timer_func "./a.out > gcc.log"
     echo Done $line
   else
     echo Failed $line
