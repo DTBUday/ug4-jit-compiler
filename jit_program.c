@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "../tinycc/include/libtcc.h"
+#include "../tinycc/libtcc.h"
 
 /* this function is called by the generated code */
 int add(int a, int b) {

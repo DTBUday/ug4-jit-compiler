@@ -15,3 +15,4 @@ rm gcc.log jit.log
 
 # cat comparison.log | grep real | sed -e 's/.*m//g' | sed -e 's/s$//g'
 # cat comparison.log | grep Execution | sed -e 's/.*:\ //g' | sed -e 's/\ (.*//g'
+# cat comparison.log | grep -v Failed | sed -e 's/Total execution time: //g' | sed -e 's/ (micro sec)//g' | sed -e 's/Done .*\///g' | ./log2csv.py
