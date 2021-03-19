@@ -9,10 +9,10 @@ ls ~/AnghaBench | while read line; do
 	LOC=$(find ~/AnghaBench/$line -type f -exec wc -l {} + | tail -n1 | sed -e 's/total//g' -e 's/\ //g')
 
 	# Gets the benchmark files -> run GCC/TCC -> compiles timing to a *.{gcc,tcc}.report file -> remove object files
-	find ~/AnghaBench/$line -type f | xargs ../build/jit_program > report/$line.tcc.report
+	find ~/AnghaBench/$line -type f | xargs /usr/bin/time -f "real %e" -o report/$line.tcc.report ../build/jit_program
 	if [ $? -eq 0 ]
 	then
-		find ~/AnghaBench/$line -type f | xargs gcc -O0 -ftime-report -c -w &>> report/$line.gcc.report
+		find ~/AnghaBench/$line -type f | xargs /usr/bin/time -f "real %e" -o report/$line.gcc.report gcc -O0 -c -w
 		rm *.o
 
 		# Collect some data

@@ -111,10 +111,6 @@ int main(int argc, char **argv) {
 		tcc_delete(s);
 
 		gettimeofday(&endTime, NULL);
-
-		fprintf(stdout, "Initialization time: %d (micro sec)\n", getTime(&startTime, &initMeasure));
-		fprintf(stdout, "Parse and Compile, total time: %d (micro sec)\n", getTime(&initMeasure, &compileEndMeasure));
-		fprintf(stdout, "Relocate time: %d (micro sec)\n", getTime(&compileEndMeasure, &endTime));
 	} else {
 		// Run some tests
 		TCCState *s = init();
