@@ -23,5 +23,8 @@ plt.plot(gcc_runtime, 'r--')
 plt.plot(tcc_runtime, 'b.')
 plt.show()
 
+plt.title('Compilation time comparison between GCC & TCC')
 plt.scatter(gcc_runtime, tcc_runtime)
+plt.xlabel('GCC compilation time, seconds')
+plt.ylabel('TCC compilation time, seconds')
 plt.show()
