@@ -1,0 +1,121 @@
+Total execution time: 54221 (micro sec)
+Total execution time: 6063 (micro sec)
+Done /home/strange/c-code-katas/Eular/sum_of_multiples_of_3_5.c
+Total execution time: 67432 (micro sec)
+Total execution time: 6140 (micro sec)
+Done /home/strange/c-code-katas/Eular/smallest_multiple.c
+Total execution time: 32283 (micro sec)
+Total execution time: 6200 (micro sec)
+Done /home/strange/c-code-katas/Eular/large_sum.c
+Total execution time: 31996 (micro sec)
+Total execution time: 6613 (micro sec)
+Done /home/strange/c-code-katas/Eular/largest_product_in_series.c
+Failed /home/strange/c-code-katas/Eular/palindrome_of_numbers.c
+Total execution time: 51520 (micro sec)
+Total execution time: 5447 (micro sec)
+Done /home/strange/c-code-katas/Eular/sum_square_difference.c
+Total execution time: 130298 (micro sec)
+Total execution time: 6456 (micro sec)
+Done /home/strange/c-code-katas/Eular/largest_product_in_grid.c
+Total execution time: 278311 (micro sec)
+Total execution time: 91242 (micro sec)
+Done /home/strange/c-code-katas/Eular/special_pythagorean_triplet.c
+Total execution time: 38933 (micro sec)
+Total execution time: 7578 (micro sec)
+Done /home/strange/c-code-katas/Eular/sieve_of_eratosthenes.c
+Total execution time: 701868 (micro sec)
+Total execution time: 609172 (micro sec)
+Done /home/strange/c-code-katas/Eular/highly_divisible_triangular_number.c
+Total execution time: 120038 (micro sec)
+Total execution time: 36717 (micro sec)
+Done /home/strange/c-code-katas/Eular/fibonacci_series.c
+Total execution time: 147902 (micro sec)
+Total execution time: 135325 (micro sec)
+Done /home/strange/c-code-katas/Eular/power_digit_sum.c
+Total execution time: 26249 (micro sec)
+Total execution time: 5409 (micro sec)
+Done /home/strange/c-code-katas/Eular/lattice_paths.c
+Total execution time: 2559507 (micro sec)
+Total execution time: 880556 (micro sec)
+Done /home/strange/c-code-katas/Eular/longest_collatz_sequence.c
+Total execution time: 31834 (micro sec)
+Total execution time: 8710 (micro sec)
+Done /home/strange/c-code-katas/Eular/maximum_path_sum_1.c
+Total execution time: 28359 (micro sec)
+Total execution time: 6271 (micro sec)
+Done /home/strange/c-code-katas/DSA/LinkedList/singly_linked_list.c
+Total execution time: 38116 (micro sec)
+Total execution time: 6033 (micro sec)
+Done /home/strange/c-code-katas/DSA/LinkedList/doubly_linked_list.c
+Failed /home/strange/c-code-katas/DSA/Tree/binary_search_tree.c
+Total execution time: 24688 (micro sec)
+Total execution time: 6088 (micro sec)
+Done /home/strange/c-code-katas/DSA/Search/binary_search.c
+Total execution time: 22047 (micro sec)
+Total execution time: 6157 (micro sec)
+Done /home/strange/c-code-katas/DSA/Search/linear_search.c
+Total execution time: 20349 (micro sec)
+Total execution time: 5622 (micro sec)
+Done /home/strange/c-code-katas/DSA/Misc/luhn.c
+Failed /home/strange/c-code-katas/DSA/Sorting/quick_sort.c
+Total execution time: 30825 (micro sec)
+Total execution time: 10416 (micro sec)
+Done /home/strange/c-code-katas/DSA/Sorting/shell_sort.c
+Total execution time: 8093520 (micro sec)
+Total execution time: 7062874 (micro sec)
+Done /home/strange/c-code-katas/DSA/Sorting/selection_sort.c
+Total execution time: 50033 (micro sec)
+Total execution time: 15159 (micro sec)
+Done /home/strange/c-code-katas/DSA/Sorting/bubble_sort.c
+Total execution time: 25526 (micro sec)
+Total execution time: 11744 (micro sec)
+Done /home/strange/c-code-katas/DSA/Sorting/insertion_sort.c
+Total execution time: 23539 (micro sec)
+Total execution time: 5577 (micro sec)
+Done /home/strange/c-code-katas/DSA/Sorting/merge_sort.c
+Total execution time: 11979 (micro sec)
+Total execution time: 5220 (micro sec)
+Done /home/strange/c-code-katas/Math/euclid_gcd.c
+Total execution time: 32788 (micro sec)
+Total execution time: 5637 (micro sec)
+Done /home/strange/c-code-katas/Math/prime_factors.c
+Total execution time: 23417 (micro sec)
+Total execution time: 5210 (micro sec)
+Done /home/strange/c-code-katas/Math/is_prime.c
+Total execution time: 32769 (micro sec)
+Total execution time: 5710 (micro sec)
+Done /home/strange/c-code-katas/Math/common_factors.c
+Total execution time: 33021 (micro sec)
+Total execution time: 7214 (micro sec)
+Done /home/strange/c-code-katas/Math/factors.c
+Total execution time: 37172 (micro sec)
+Total execution time: 6535 (micro sec)
+Done /home/strange/c-code-katas/Math/gcd.c
+Failed /home/strange/c-code-katas/Recursion/ackermann.c
+Total execution time: 20898 (micro sec)
+Total execution time: 6061 (micro sec)
+Done /home/strange/c-code-katas/Recursion/tower_of_hanoi.c
+Total execution time: 30554 (micro sec)
+Total execution time: 5247 (micro sec)
+Done /home/strange/c-code-katas/Recursion/str_reverse.c
+Total execution time: 17002 (micro sec)
+Total execution time: 5471 (micro sec)
+Done /home/strange/c-code-katas/Recursion/palindrome.c
+Total execution time: 17611 (micro sec)
+Total execution time: 5735 (micro sec)
+Done /home/strange/c-code-katas/Recursion/binary_search.c
+Total execution time: 18494 (micro sec)
+Total execution time: 5785 (micro sec)
+Done /home/strange/c-code-katas/Recursion/factorial.c
+Total execution time: 17860 (micro sec)
+Total execution time: 5441 (micro sec)
+Done /home/strange/c-code-katas/Recursion/linear_search.c
+Total execution time: 16744 (micro sec)
+Total execution time: 5173 (micro sec)
+Done /home/strange/c-code-katas/Recursion/sum_of_digits.c
+Total execution time: 20611 (micro sec)
+Total execution time: 5159 (micro sec)
+Done /home/strange/c-code-katas/Recursion/char_replace.c
+Total execution time: 4913079 (micro sec)
+Total execution time: 1398709 (micro sec)
+Done /home/strange/c-code-katas/Recursion/nth_fibonacci_number.c
