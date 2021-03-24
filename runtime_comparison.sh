@@ -1,17 +1,22 @@
 #!/usr/bin/sh
 
+rm gcc.log jit.log
 find ~/c-code-katas/ -type f | grep "\.c$" | while read line; do
-  ./timer_func "./build/jit_program $line > jit.log"
+  tcc $line -lm -o a.out >> jit.log
+  if [ $? -ne 0 ]; then
+	  continue
+  fi
+  
+  ./timer_func "./a.out >> jit.log"
   if [ $? -eq 0 ]; then 
-    gcc $line -lm -w -O3 > gcc.log
-    ./timer_func "./a.out > gcc.log"
+    gcc $line -lm -w -O3 >> gcc.log
+    ./timer_func "./a.out >> gcc.log"
     echo Done $line
   else
     echo Failed $line
   fi
 done
 
-rm gcc.log jit.log
 
 # cat comparison.log | grep real | sed -e 's/.*m//g' | sed -e 's/s$//g'
 # cat comparison.log | grep Execution | sed -e 's/.*:\ //g' | sed -e 's/\ (.*//g'
