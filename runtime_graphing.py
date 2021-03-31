@@ -11,16 +11,30 @@ gcc_runtime = []
 jit_runtime = []
 
 flag = False
+counter = 0
+avg = 0
 for line in sys.stdin:
         line = float(int(line)/1e6)
+        avg += line
+
+        '''
         if flag == True:
                 gcc_runtime.append(line)
                 runtime_pairs.append((temp, line))
         else:
                 temp = line
                 jit_runtime.append(line)
+        '''
 
-        flag = not flag
+        counter += 1
+        if counter % 5 == 0:
+            flag = not flag
+            avg = avg/5.0
+
+            if flag == True:
+                gcc_runtime.append(avg)
+            else:
+                jit_runtime.append(avg)
 
 # Log-log scaling
 x = np.linspace(0, 1, 1000)
