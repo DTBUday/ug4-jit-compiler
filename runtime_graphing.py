@@ -37,7 +37,7 @@ for line in sys.stdin:
                 jit_runtime.append(avg)
 
 # Log-log scaling
-x = np.linspace(0, 1, 1000)
+x = np.linspace(0, 5, 1000)
 plt.plot(x, x, 'r-')
 plt.scatter(gcc_runtime, jit_runtime)
 plt.gca().set_xscale('log')
