@@ -31,7 +31,7 @@ for line in sys.stdin:
             flag = not flag
             avg = avg/5.0
 
-            if flag == True:
+            if flag == False:
                 gcc_runtime.append(avg)
             else:
                 jit_runtime.append(avg)
