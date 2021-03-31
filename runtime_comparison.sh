@@ -18,7 +18,7 @@ find ~/c-code-katas/ -type f | grep "\.c$" | while read line; do
   ./timer_func "./a.out >> jit.log"
   ./timer_func "./a.out >> jit.log"
   if [ $? -eq 0 ]; then 
-    gcc $line -lm -w -O3 >> gcc.log
+    gcc $line -lm -w -O0 >> gcc.log
     ./timer_func "./a.out >> gcc.log"
     ./timer_func "./a.out >> gcc.log"
     ./timer_func "./a.out >> gcc.log"
