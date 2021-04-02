@@ -85,16 +85,9 @@ int main(int argc, char **argv) {
 			/* LOAD & COMPILE FILE */
 			char *code = get_file_content(argv[i]);
 			if (tcc_compile_string(s, code) == -1) {
-				//fprintf(stderr, "Failed to compile file %s\n", argv[i]);
-				//fprintf(stderr, "Trying to add library\n");
-
 				if (tcc_add_file(s, argv[i]) == -1) {
-					//fprintf(stderr, "Failed to compile\n");
-				} else {
-					//fprintf(stderr, "Succeeded compilation\n");
+					exit(1);
 				}
-			} else {
-				//fprintf(stderr, "Compilation of %s succees\n", argv[i]);
 			}
 
 			gettimeofday(&compileMeasure[i], NULL);
@@ -103,10 +96,6 @@ int main(int argc, char **argv) {
 		/* End of compilation */
 		gettimeofday(&compileEndMeasure, NULL);
 
-		/* RELOCATE CODE */
-		//if (tcc_relocate(s, TCC_RELOCATE_AUTO) < 0)
-		//	return 1;
-	
 		/* Deleting the state */
 		tcc_delete(s);
 

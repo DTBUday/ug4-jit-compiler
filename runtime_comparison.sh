@@ -1,5 +1,11 @@
 #!/usr/bin/sh
 
+
+if [ $# -ne 1 ]; then
+	echo "Usage ./runtime_comparison.sh [0|3]"
+	exit
+fi
+
 rm gcc.log jit.log
 find ~/c-code-katas/ -type f | grep "\.c$" | while read line; do
   tcc $line -lm -o a.out >> jit.log
@@ -18,7 +24,7 @@ find ~/c-code-katas/ -type f | grep "\.c$" | while read line; do
   ./timer_func "./a.out >> jit.log"
   ./timer_func "./a.out >> jit.log"
   if [ $? -eq 0 ]; then 
-    gcc $line -lm -w -O0 >> gcc.log
+    gcc $line -lm -w -O$1 >> gcc.log
     ./timer_func "./a.out >> gcc.log"
     ./timer_func "./a.out >> gcc.log"
     ./timer_func "./a.out >> gcc.log"
