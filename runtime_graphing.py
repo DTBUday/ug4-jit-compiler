@@ -22,8 +22,8 @@ with open(sys.argv[-1]) as csvfile:
             continue
         
         name, _,_,_,_,_, tcctime, _,_,_,_,_, gcctime = row
-        gcc_runtime.append(gcctime)
-        jit_runtime.append(tcctime)
+        gcc_runtime.append(float(gcctime))
+        jit_runtime.append(float(tcctime))
 
 # Log-log scaling
 x = np.linspace(0, 5, 1000)

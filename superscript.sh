@@ -46,11 +46,11 @@ fi
 
 if [ $1 -eq 3 ]; then
 	# Graphing the results
-	cd ~/ug4-jit-compiler/scripts
-	./compilation_graphing.py
+	cd scripts
+	py compilation_graphing.py
+	cd ..
 
-	cd ~/ug4-jit-compiler/
-	./runtime_graphing.py runtime_comparison.csv	
-	./runtime_graphing.py runtime_comparison_no_opt.csv
-	./runtime_graphing_upgrade.py runtime_upgrade.csv
+	py runtime_graphing.py runtime_comparison.csv	
+	py runtime_graphing.py runtime_comparison_no_opt.csv
+	py runtime_graphing_upgrade.py runtime_upgrade.csv
 fi

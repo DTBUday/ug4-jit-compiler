@@ -22,15 +22,13 @@ with open('runtime_upgrade.csv') as csvfile:
             continue
         
         name, _,_,_,_,_, tcctime, oldtcctime = row
-        old_runtime.append(oldtcctime)
-        new_runtime.append(tcctime)
+        old_runtime.append(float(oldtcctime))
+        new_runtime.append(float(tcctime))
 
 # Log-log scaling
 x = np.linspace(0, 5, 1000)
 plt.plot(x, x, 'r-')
 plt.scatter(old_runtime, new_runtime)
-plt.gca().set_xscale('log')
-plt.gca().set_yscale('log')
 
 plt.title('Runtime comparison between TCC & TCC with optimizations implemented')
 plt.xlabel('Old runtime execution, seconds')
